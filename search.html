@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Pencarian</title>
+    <link rel="stylesheet" href="css/search.css?v=2.2">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <button class="back-btn" id="backBtn"><a href="home.html"><img src="Assets/icon/Artboard 73.png"
+                    alt="kembali"></a></button>
+        <div class="logo">Hasil Pencarian</div>
+
+        <a href="akunsaya.html" class="akun-btn">
+            <img class="akun-btn-img" src="Assets/icon/Artboard 50.png" alt="akun">
+        </a>
+    </header>
+
+
+
+    <section class="result-section">
+        <!--bagian info pencaharian-->
+        <div class="search-info">
+            <div>
+                <small id="result-count">Menampilkan 21 hasil pencarian</small><br>
+                <strong class="keyword" id="keyword">Tommy Kurniawan</strong>
+            </div>
+            <button class="clear-btn" id="clearBtn">✕</button>
+        </div>
+
+        <!--kartu hasil anggota-->
+        <div class="result-card">
+            <div class="result-text">
+                <h3 class="result-name">Tommy Kurniawan</h3>
+                <p class="result-desc">
+                    Anggota Majelis Permusyawaratan Rakyat Republik Indonesia periode 2024–2029
+                    sejak 1 Oktober 2019
+                </p>
+                <div class="result-actions">
+                    <span class="badge">DPR RI KOMISI XI</span>
+                    <a href="tommykurniawan.html" class="info-link" id="infoBtn">Info selengkapnya &gt;</a>
+                </div>
+            </div>
+            <div class="result-photo">
+                <img src="Assets/img/Artboard 17.png" alt="Tommy Kurniawan">
+            </div>
+        </div>
+    </section>
+
+    <!-- section tambahan -->
+    <section class="related-section">
+        <h3 class="related-title">BERITA TERKAIT <span class="rss-icon"><img src="Assets/icon/Artboard 54.png"
+                    alt=""></span></h3>
+
+        <div class="related-card">
+            <div class="related-text">
+                <a href="#" class="related-link">Tommy Kurniawan Muncul di Sidang MKD Ahmad Dhani, Ini Profil dan
+                    Kiprahnya</a>
+                <div class="related-meta">21 Juni 2025, 15:30 WIB | Kompas Entertainment</div>
+            </div>
+            <div class="related-photo">
+                <img src="Assets/img/Artboard 18.png" alt="Tommy Kurniawan">
+            </div>
+        </div>
+
+        <div class="related-card">
+            <div class="related-text">
+                <a href="#" class="related-link">Istri Tommy Kurniawan: Kami Ada Masalah</a>
+                <div class="related-meta">18 Juni 2025, 12:10 WIB | Kompas Entertainment</div>
+            </div>
+            <div class="related-photo">
+                <img src="Assets/img/Artboard 19.png" alt="Istri Tommy">
+            </div>
+        </div>
+
+        <div class="related-card">
+            <div class="related-text">
+                <a href="#" class="related-link">Pendidikan Tommy Kurniawan: Dikira jadi Hakim, Ternyata Anggota MKD</a>
+                <div class="related-meta">1 Juni 2025, 07:46 WIB | Suara.com</div>
+            </div>
+            <div class="related-photo">
+                <img src="Assets/img/Artboard 20.png" alt="Tommy MKD">
+            </div>
+        </div>
+    </section>
+
+    <script src="js/search.js"></script>
+</body>
+
+</html>

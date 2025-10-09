@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akun Saya</title>
+    <link rel="stylesheet" href="css/akunsaya.css?v=3.1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<body>
+    <!--bagian paling atas-->
+    <div class="header">
+        <div class="back-btn"><a href="home.html"><img src="Assets/icon/Artboard 73.png" alt="back-btn"></a></div>
+        <h2>Akun Saya</h2>
+        <div class="logout-icon"><a href="login.html"><img src="Assets/icon/Artboard 81.png" alt="belum tahu"></a></div>
+    </div>
+
+    <!-- Tombol navigasi dari password ke PIN -->
+    <div class="tabs">
+        <div class="tab active" data-tab="password"> Ubah Password</div>
+        <div class="tab" data-tab="pin">Ubah Pin</div>
+    </div>
+
+    <!--buat ubah pass-->
+    <div class="form-container" id="form-password">
+        <p>Lengkapi form berikut untuk mengubah kata sandi Anda</p>
+        <div class="input-group">
+            <input type="password" id="old" placeholder="Masukan kata sandi lama Anda">
+            <span class="fa fa-eye eye"></span>
+        </div>
+        <div class="input-group">
+            <input type="password" id="new" placeholder="Masukkan kata sandi baru Anda">
+            <span class="fa fa-eye eye"></span>
+        </div>
+        <div class="input-group">
+            <input type="password" id="confirm" placeholder="Masukkan ulang kata sandi baru Anda">
+            <span class="fa fa-eye eye"></span>
+        </div>
+        <button class="btn" id="save">SIMPAN</button>
+    </div>
+
+    <!--Buat Ubah pin-->
+    <div class="form-container hidden" id="form-pin">
+        <p>Lengkapi form berikut untuk mengubah PIN Anda</p>
+        <div class="input-group">
+            <input type="password" id="old-pin" maxlength="4" placeholder="Masukkan PIN lama Anda">
+            <span class="fa fa-eye eye"></span>
+        </div>
+        <div class="input-group">
+            <input type="password" id="new-pin" maxlength="4" placeholder="Masukkan PIN baru Anda">
+            <span class="fa fa-eye eye"></span>
+        </div>
+        <div class="input-group">
+            <input type="password" id="confirm-pin" maxlength="4" placeholder="Masukkan ulang PIN baru Anda">
+            <span class="fa fa-eye eye"></span>
+        </div>
+        <button class="btn" id="save-pin">SIMPAN</button>
+    </div>
+    <script src="js/akunsaya.js?v=1.0"></script>
+</body>
+
+</html>

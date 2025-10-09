@@ -1,0 +1,444 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* Header */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(90deg, #004853, #3492a1);
+  padding: 10px 16px;
+  color: white;
+  border-bottom-right-radius: 40px;
+  z-index: 10;
+}
+
+/* Tombol Menu */
+.menu-btn {
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.menu-btn img {
+  /* width: clamp(5px, 5vw, 20px); */
+  width: clamp(5px, 3vw, 20px);
+  height: auto;
+}
+
+.logo {
+  font-size: clamp(0.5em, 7vw, 2em);
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  margin: 0 0px 0px 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.651);
+  /* margin: 0 10px; */
+}
+
+.search-form {
+  flex: 1;
+  display: flex;
+  margin: 0 16px;
+  max-width: 400px;
+  background: #004355;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.search-form input {
+  /* padding: 8px 12px; */
+  flex: 1;
+  padding: 8px 0px 8px 12px;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 10px;
+  outline: none;
+}
+
+.search-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-form button {
+  background: #004355;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 1em;
+  border-radius: 50%;
+  margin: 4px 10px 6px 4px;
+  /* font-size: 1.2em; */
+  /* padding: 0 14px; */
+  /* margin: 4px; */
+}
+
+/*tombol akun*/
+.akun-btn {
+  background: none;
+  border-radius: 50%;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  font-weight: bold;
+  /* margin-left: 20px; */
+  margin-left: 10px;
+}
+
+.kalender-btn {
+  background: none;
+  border-radius: 50%;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+.akun-btn-img {
+  /* width: clamp(10px, 9vw, 40px); */
+  width: clamp(10px, 7vw, 40px);
+  height: auto;
+}
+
+.kalender-btn-img {
+  /* width: clamp(10px, 7vw, 30px); */
+  width: clamp(10px, 5vw, 30px);
+  height: auto;
+}
+
+/*berita terkini*/
+.headline {
+  position: relative;
+  color: white;
+  height: clamp(220px, 37vh, 360px);
+  background: url("../Assets/img/Artboard 8.png") no-repeat center center;
+  background-size: cover;
+  background-color: #000;
+}
+
+.headline-text {
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  right: 20px;
+  max-width: 90%;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  /* left: 20px; */
+}
+
+.judul-waktu {
+  padding: 10px 15px;
+  /* padding: 10px; */
+}
+
+.judul-waktu h1 {
+  font-size: clamp(0.8em, 5vw, 1.4em);
+  margin: 0;
+  color: black;
+  line-height: 1.2;
+  /* margin: 10px 0; */
+}
+.judul-waktu p {
+  font-size: smaller;
+  color: #057a74;
+  margin-top: 5px;
+}
+
+.tag {
+  background: #f05a22;
+  padding: 4px 8px;
+  font-weight: bolder;
+  border-radius: 4px;
+  font-size: 0.8em;
+  border-radius: 12px;
+}
+
+.card {
+  background: #eff2f2; /* warna putih */
+  border: 0.5px solid #ddd; /* garis tipis */
+  border-radius: 25px; /* sudut melengkung */
+  padding: 0px 16px; /* jarak isi dengan tepi */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* efek bayangan */
+  margin: 20px 0; /* jarak antar elemen */
+}
+
+.header-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  /* margin-bottom: 16px; */
+}
+
+.header-profile h3 {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin: 0;
+  color: #f05a22;
+  /* font-size: 18px; */
+}
+
+.profil-btn {
+  width: auto;
+  height: 15px;
+  cursor: pointer;
+  /* height: 20px; */
+}
+
+/*bagian tampilan daftar divisi*/
+.profil {
+  justify-content: space-around;
+  padding: 5px 15px 0 15px;
+  background: white;
+  margin: 10px 0;
+  border: 3px solid #2d919b; /* garis tipis */
+  border-radius: 25px; /* sudut melengkung */
+  /* padding: 16px; */
+}
+
+.swiper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap; /*untuk agar tidak jadi vertikal*/
+}
+
+.swiper-pagination {
+  position: relative !important; /* supaya ikut flow container */
+  margin-top: 10px !important;
+  /* margin-top: 15px; tambah jarak ke bawah */
+}
+
+.profil-item {
+  text-align: center;
+  font-weight: bold;
+  padding: 8px;
+  color: #007b80;
+  min-width: clamp(30px, 20vw, 160px); /* fleksibel sesuai layar */
+  flex: 0 0 auto;
+  font-size: clamp(0.4em, 2vw, 0.9em); /* kecilin font biar muat */
+  white-space: normal; /* biar boleh turun baris */
+}
+
+.profil-item img {
+  width: clamp(10px, 12vw, 60px);
+  height: 55px;
+  margin-bottom: 5px;
+  object-fit: contain;
+  /* height: auto; */
+  /* margin-bottom: 8px; */
+}
+
+/* berita lainnya */
+.berita-anggota {
+  padding: 10px;
+  /* padding: 16px; */
+}
+
+.berita-anggota h2 {
+  margin-bottom: 5px;
+  color: #f05a22;
+  font-size: 0.8em;
+  /* margin-bottom: 12px; */
+  /* font-size: clamp(1em, 5vw, 2em); */
+}
+
+.berita-anggota .grid {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
+  align-items: stretch; /* semua card ikut tinggi paling besar */
+}
+
+.grid h3 {
+  color: black;
+}
+
+.grid p {
+  color: #057a74;
+  font-size: small;
+}
+
+.berita-anggota article {
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.berita-anggota img {
+  width: auto;
+  height: clamp(100px, 20vw, 800px);
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.berita-anggota h3 {
+  font-size: clamp(0.5em, 4vw, 1em);
+  margin-bottom: 6px;
+  color: black;
+  line-height: 1.4;
+  white-space: normal; /* biar teks boleh turun baris */
+  word-wrap: break-word; /* kalau ada kata panjang banget, boleh dipotong */
+}
+
+/*sidebar*/
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #00809c, #026270);
+  color: white;
+  transition: left 0.3 ease;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.berita-anggota p {
+  font-size: 0.8em;
+  color: #057a74;
+  margin-top: auto; /* selalu nempel ke bawah card */
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar-header {
+  position: relative;
+  text-align: center;
+  padding: 10px 16px;
+}
+
+.sidebar-header .close-btn {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar-search {
+  width: 100%;
+  margin: 20px 0;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0 25px;
+}
+
+.sidebar ul li {
+  padding: 15px 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+  color: white;
+  border-bottom: 1px solid #fff;
+  font-weight: bold;
+}
+
+.sidebar ul li:hover {
+  background: #f05a22;
+  border-radius: 6px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.size-14 {
+  font-size: 14px !important;
+}
+
+.form-sidebar-search {
+  display: flex;
+  margin: 15px 16px;
+  max-width: 400px;
+  background: #004355;
+  border-radius: 30px;
+  overflow: hidden;
+  height: 40px;
+}
+
+.form-sidebar-search input {
+  flex: 1;
+  padding: 8px 0px 8px 12px;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 12px;
+  outline: none;
+}
+
+.form-sidebar-search button {
+  background: #004355;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 1em;
+  border-radius: 50%;
+  margin: 4px 10px 6px 4px;
+}
+
+.w-30 {
+  width: 30px !important;
+}
+
+.form-sidebar-search input::placeholder {
+  color: #fff !important;
+}

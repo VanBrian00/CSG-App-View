@@ -1,0 +1,275 @@
+/* Reset dasar seperti di home.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* Header mirip home */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #004853, #3492a1);
+  padding: 10px 16px;
+  color: white;
+  border-bottom-right-radius: 40px;
+  z-index: 10;
+}
+
+.logo {
+  font-size: clamp(0.8em, 5vw, 1.4em);
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.65);
+}
+
+.back-btn,
+.clear-btn {
+  background: none;
+  font-weight: bolder;
+  border: none;
+  color: #046785;
+  font-size: 1.4em;
+  cursor: pointer;
+  padding: 6px 10px;
+}
+.back-btn img {
+  height: 18px;
+  width: auto;
+}
+
+.akun-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  width: clamp(10px, 9vw, 40px);
+}
+
+.akun-btn-img {
+  width: clamp(10px, 7vw, 40px);
+  height: auto;
+}
+
+/* Section hasil */
+.result-section {
+  padding: 100px 16px 0; /* top 100px untuk offset header fixed */
+}
+
+.title {
+  color: #f05a22;
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.result-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #d0d0d0; /* border lebih jelas */
+  border-radius: 12px;
+  padding: clamp(10px, 3vw, 20px);
+  max-width: 600px;
+  margin: 0 auto;
+  gap: clamp(10px, 3vw, 20px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.result-text {
+  flex: 1;
+}
+
+.result-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #000;
+}
+
+.highlight-name {
+  color: #046785;
+  font-weight: bold;
+}
+
+.result-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.result-desc {
+  font-size: clamp(0.5em, 3.5vw, 0.95em);
+  color: black;
+  font-weight: 545;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.result-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.badge {
+  border-color: #469aab;
+  border: 1px solid;
+  color: #046785;
+  padding: 0 7px;
+  border-radius: 5px; /* agar pill lebih bulat */
+  font-size: clamp(0.4em, 2.5vw, 0.8em);
+  font-weight: 1000;
+  white-space: nowrap;
+}
+
+.info-link {
+  font-size: clamp(0.4em, 2.5vw, 0.8em);
+  color: #046785;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.info-link:hover {
+  text-decoration: underline;
+}
+
+.search-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #469aab;
+  padding: 0 16px;
+  margin: 0 auto 20px;
+  max-width: 600px;
+}
+.search-info small {
+  color: #222;
+  font-size: 0.8em;
+}
+.search-info .keyword {
+  color: #046785;
+  font-size: 1.2em;
+  padding-bottom: 2px;
+}
+.close-search {
+  background: none;
+  border: none;
+  font-size: 1.4em;
+  color: #046785;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+.close-search:hover {
+  color: #003f4d;
+}
+
+.result-photo img {
+  width: clamp(80px, 3vw, 120px);
+  height: clamp(80px, 3vw, 120px);
+  border-radius: 50%;
+  object-fit: contain;
+  border: 1px solid #007b80; /* opsional */
+}
+
+.result-info h3 {
+  color: #007b80;
+  font-size: 1.2em;
+  margin-bottom: 6px;
+}
+
+.result-info p {
+  margin-bottom: 12px;
+  color: #444;
+  font-size: 0.95em;
+}
+
+.info-btn {
+  background: #f05a22;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.info-btn:hover {
+  background: #d94e1d;
+}
+
+.related-section {
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+.related-title {
+  max-width: 600px;
+  color: #f05a22;
+  font-size: clamp(0.5em, 3vw, 1em);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 auto 0;
+}
+.related-title img {
+  width: clamp(10px, 7vw, 30px);
+  height: auto;
+}
+
+.rss-icon {
+  font-size: 1.1em;
+}
+
+.related-card {
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px 0;
+  gap: 16px;
+  margin: auto;
+}
+
+.related-text {
+  flex: 1;
+  border-bottom: 2px solid #5ba3ac;
+}
+
+.related-link {
+  font-size: clamp(0.5em, 3.5vw, 1em);
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+  line-height: clamp(0px, 0.05vw, 1.5px);
+}
+
+.related-link:hover {
+  text-decoration: underline;
+}
+
+.related-meta {
+  font-size: clamp(0.3em, 2.5vw, 0.8em);
+  color: #00588d;
+  margin-top: 3px;
+}
+
+.related-photo img {
+  width: 100px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 4px;
+}

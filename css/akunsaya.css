@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff url("../Assets/img/Artboard\ 34.png") no-repeat bottom right;
+  min-height: 100vh;
+  background-size: cover;
+  /* background-size: 250px; */
+}
+
+.header {
+  background: linear-gradient(to right, #004550, #3391a0);
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom-right-radius: 35px;
+}
+.header h2 {
+  margin: 0;
+  font-size: clamp(0.8em, 5vw, 1.4em);
+  flex: 1;
+  text-align: center;
+  /* font-size: 18px; */
+}
+.back-btn {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+.back-btn img {
+  width: auto;
+  height: 18px;
+  /* height: 25px; */
+}
+.logout-icon {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+.logout-icon img {
+  width: clamp(10px, 7vw, 40px);
+  height: auto;
+  /* width: 45px;
+    height: auto; */
+}
+
+/*untuk tombol navigasinya*/
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  /* margin-top: 15px; */
+}
+.tab {
+  margin: 0 10px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #666;
+}
+.tab.active {
+  color: #e74c3c;
+  border-bottom: 2px solid #e74c3c;
+}
+
+/*buat tempat ganti pass/PINnya*/
+.form-container {
+  /* margin: 20px; */
+  margin: 30px 20px;
+  text-align: center;
+  padding: 0 20px;
+}
+.form-container p {
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 800;
+  /* font-size: 14px; */
+}
+.input-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+.input-group input {
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.input-group .eye {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 16px;
+  color: #888;
+}
+
+/*tombol Enter/submitnya*/
+.btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #cf3c2d;
+}
+
+/*class tersembunyi, buat sembunyiin beberapa tampilan*/
+.hidden {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

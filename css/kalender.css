@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #333;
+}
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      background: linear-gradient(90deg, #004550, #3391a0);
+      color: #fff;
+      padding: 15px;
+      border-bottom-right-radius: 15px;
+    }
+    .header img {
+        height: 25px;
+        width: auto;
+    }
+
+    .header button {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 20px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .header h1 {
+      font-size: 18px;
+      font-weight: bold;
+      flex: 1;
+      text-align: center;
+    }
+
+    /* Calendar Section */
+    .calendar-container {
+      background: #fff;
+      margin: 15px;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;   /* ini kuncinya */
+    border-bottom: 1px solid #ccc; /* garis bawah */
+}
+
+.calendar-header button:first-child {
+    border-right: 1px solid #ccc;
+}
+
+.calendar-header button:last-child {
+    border-left: 1px solid #ccc;
+}
+
+.calendar-header button {
+    background: none;
+    border: none;
+    font-size: clamp(5px, 3vw, 18px);
+    font-weight: bolder;
+    cursor: pointer;
+    color: #666;
+    padding: 10px 15px;
+}
+
+.calendar-header h2 {
+    font-size: clamp(10px, 7vw, 30px);
+    color: #016c7a;
+    font-weight: bolder;
+}
+
+.calendar-header div {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.calendar-header span {
+    font-size: clamp(10px, 5vw, 17px);
+    color: #888;
+    font-weight: bolder;
+}
+
+/*isi kalender*/
+table.calendar {
+    width: 100%;
+    height: 40vw;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+    table.calendar th {
+      color: #555;
+      font-size: clamp(10px, 4vw, 13px);
+      font-weight: lighter;
+      padding: 25px 5px 15px;
+    }
+
+    table.calendar td {
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    table.calendar td.sunday {
+      color: #f05a22; /* Warna oren untuk Minggu */
+      font-weight: bold;
+    }
+
+    table.calendar td.active {
+      background: #f05a22;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    /* Reminder List */
+    .reminder-list {
+      margin: 15px auto;
+      width: 90%;
+      max-height: 400px;
+      max-width: 1000px;
+      overflow-y: auto;
+    }
+
+.reminder {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative; /* supaya .time bisa nempel ke border */
+}
+
+.reminder .left {
+    display: flex;
+    align-items: center; /* tanggal sejajar vertikal dengan teks */
+    gap: 10px;
+}
+
+.reminder .date {
+    font-size: 50px;
+    font-weight: bold;
+    color: #016c7a;
+    margin-right: 20px;
+}
+    
+.reminder .details {
+  display: flex;
+  flex-direction: column;
+}
+
+.reminder .details h3 {
+  font-size: 14px;
+  margin: 0 0 3px;
+  font-weight: bold;
+}
+
+.reminder .details p {
+  font-size: 12px;
+  color: #555;
+  margin: 0;
+}
+
+.reminder .time {
+  background: linear-gradient(90deg, #016c7a, #0390a0); /* biar sama kayak contohmu */
+  color: #fff;
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 12px;
+  position: absolute;
+  top: 0;    /* biar nempel ke border atas */
+  right: 0;  /* biar nempel ke border kanan */
+}

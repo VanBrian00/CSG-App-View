@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CSG</title>
+    <link rel="stylesheet" href="css/login.css?v=2.1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="login-page">
+    <div class="login-container">
+        <!-- di bawah ini logo untuk CSG -->
+        <div class="logo">CSG</div>
+
+        <form action="home.html" method="get" class="login-form">
+            <h2>Silakan <b>Login</b> terlebih dahulu</h2>
+            <input type="text" placeholder="Username" required>
+            <div class="password-wrapper">
+                <input type="password" id="password" placeholder="Password" required>
+                <span class="toggle-password" onclick="togglePassword()">👁</span>
+            </div>
+            <button type="submit" class="btn-login">LOGIN</button>
+            <a href="forgot_password.html" class="forgot-password">Lupa password</a>
+        </form>
+    </div>
+
+    <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById("password");
+            const icon = document.querySelector(".toggle-password");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                icon.textContent = "⌣";
+            } else {
+                passwordInput.type = "password";
+                icon.textContent = "👁";
+            }
+        }
+    </script>
+</body>
+
+</html>

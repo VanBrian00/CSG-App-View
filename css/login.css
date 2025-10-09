@@ -1,0 +1,103 @@
+body.login-page {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+
+  /*ambil aset bg dari folder lain*/
+  background-color: #40b9a5;
+  background-image: url("../Assets/img/Artboard\ 16.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.login-container {
+  margin: auto;
+  text-align: center;
+  width: clamp(0px, 75vw, 320px);
+}
+
+.logo {
+  font-size: clamp(10px, 15vw, 50px);
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.651);
+  letter-spacing: 2px;
+}
+
+.login-form h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: clamp(3px, 8vw, 16px);
+  font-weight: normal;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 16px;
+  margin: 9px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: clamp(3px, 8vw, 12px);
+  box-sizing: border-box;
+}
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: clamp(3px, 8vmin, 18px);
+  color: #666;
+  user-select: none;
+}
+
+/*tombol login*/
+.btn-login {
+  container-type: inline-size;
+  container-name: button;
+  display: block;
+  width: 60%;
+  margin: auto;
+  margin-top: 25px;
+  padding: 18px 0;
+  background: #ea4b1c;
+  color: #fff;
+  font-size: clamp(5px, 7cqw, 18px);
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/*tombol lupa pass*/
+.forgot-password {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: white;
+  font-size: clamp(3px, 8vw, 14px);
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.size-14 {
+  font-size: 14px !important;
+}
